@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -11,6 +17,10 @@ nav {
     backdrop-filter: blur(10px);
 }
 
+.about-me-bio {
+    font-family: Palatino;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -21,6 +31,13 @@ a {
     gap: 30px;
     list-style-type: none;
 }
+
+#about h2 {
+    gap: 20px;
+    flex-direction: column;
+    display: flex;
+}
+
 
 .logo {
     font-family: Palatino;
@@ -99,8 +116,23 @@ a {
 
 #about {
     background-color: #3A5EAB;
+    padding: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+}
+
+.about-me-info {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+#about h2 {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
 }
 
 img {
@@ -111,8 +143,121 @@ img {
     margin: 0 auto;
     overflow: hidden;
     border: 3px solid var(--color-primary);
-    box-shadow: 0 0 30px white;
+    box-shadow: 0 0 30px darkred;
     max-width: 400px;
+}
+
+
+@media (min-width: 900px) {
+
+    #about,
+    #contact {
+        padding: 100px 50px;
+    }
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: none;
+    padding: 8px 16px;
+
+    border: 1px solid #3A5EAB;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    transition: all 0.3s ease;
+}
+
+.skills-list li {
+    padding: 8px 16px;
+    background-color: white;
+    border: 4px dotted #E92228;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    transition: all 0.3s ease;
+}
+
+#projects h2 {
+    font-family: Palatino;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.project-grid {
+    list-style-type: none;
+    display: grid;
+    gap: 25px;
+}
+
+.project-gridbox {
+    background-color: #3A5EAB;
+    border: 2px solid #E92228;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 40px;
+}
+
+.project-img h3 {
+    padding-left: 20px;
+    font-family: Palatino;
+    font-size: 1.3rem;
+    padding: 20px 20px 10px;
+}
+
+.project-img {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--color-bg-card) 0%, var(--color-bg) 100%);
+    font-family: Palatino;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: white;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.project-card h3 {
+    font-family: Palatino;
+    font-size: 1.3rem;
+    padding: 20px 20px 10px;
+}
+
+.project-card>p {
+    font-size: 1.25rem;
+    color: var(--color-text-light);
+    padding: 0 20px;
+    line-height: 1.6;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 15px 20px;
+    list-style-type: none;
+    background-color: #3A5EAB;
+}
+
+.project-img>h3 {
+    background-color: white;
+}
+
+@media (min-width: 600px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (min-width: 900px) {
@@ -121,4 +266,50 @@ img {
     #contact {
         padding: 100px 50px;
     }
+}
+
+.change {
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
+    border: #E92228;
+}
+
+.featured-page {
+    background-color: #3A5EAB;
+}
+
+.project-links {
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
+
+}
+
+#contact-info {
+    max-width: 100%;
+    flex-direction: column;
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+.contact-content {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-form {
+    flex-direction: column;
+    display: flex;
+    gap: 30px;
+}
+
+.form-group {
+    gap: 30px;
+}
+
+.about-me-bio {
+    display: flex;
+    gap: 20px;
 }
