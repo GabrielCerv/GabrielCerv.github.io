@@ -1,0 +1,15 @@
+AI-Usage link to google docs chat log: https://docs.google.com/document/d/15op8Dqiwo4_f-DieB7ufllcnb1oRd4Gf9AF9IkqZBbI/edit?usp=sharing
+
+
+Share one technical concept that you developed greater mastery over in this project. Demonstrate how you understand that concept by sharing your mental model of the concept. Then, show how you used that concept in your project.
+
+## One concept I have greater mastery over is using ``classes`` and ``ids`` in CSS. In my earlier projects, I struggled with knowing when to use a class versus an id, especially when building layouts from scratch. This time around, the distinction felt much clearer and more intentional. 
+## My mental model is that ``ids`` are best used for unique elements that appear only once on a page, like a main header or a specific section, while ``classes`` are meant for reusable styles that apply to multiple elements. ``Classes`` act like labels you can attach to many elements that should share the same styling or behavior, whereas ``ids`` are more like unique identifiers. Thinking about them this way helped me plan my HTML structure before writing any CSS.I used this concept throughout my project by assigning classes to repeated elements such as cards, buttons, and layout sections, which made my CSS more organized and easier to read.
+
+Choose one project requirement that you found challenging and are proud of implementing. Describe what made it challenging and how you were able to implement the requirement by walking through your code as succinctly as possible. Remember that your audience does not know your code nearly as well as you do so you’ll have to break it down in a logical manner for them to quickly understand it.
+
+## I found implementing CSS styling was my hardest task, mostly because it was a tedious task but also because I had a hard time finding out that I have to ``display: flex`` most of my items so that I could correctly display my items to be lined up how I wanted it to be styled onto the screen. The ability to manipulate the webpage in many different ways allows me to be creative but was also a difficult task because I found myself going into a "rabbit hole" of CSS styling which caused me to loose focus of my original intentions for my portfolio project. I believe being creative/experimental is great for a lot of reasons but I think in this situation being intentional with your time is also just as important due too.
+
+How did you leverage AI to assist your development of this project?
+
+## I use AI to help assist me in remembering what I needed to implement into my CSS Styling. I also used AI to ask what the correct formatting was for HTML and how to correctly format the ``sections`` , ``div``, and ``footer`. The final way I used AI  was to implement CSS styles that I could not recognize, by asking AI to help provide me with different styling tools to alter the part of my code that I needed to style.
